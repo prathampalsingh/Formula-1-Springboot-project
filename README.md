@@ -107,7 +107,7 @@ DELETE /results/{id} - Delete a result
 
 ***Made with ❤️ using Java and Spring Boot.***
 
-        <dt>right</dt>
+  <dt>right</dt>
         <dd>Align the elements to the right.</dd>
         
         <dt>center</dt>
