@@ -107,21 +107,5 @@ DELETE /results/{id} - Delete a result
 
 ***Made with ❤️ using Java and Spring Boot.***
 
-  <dt>right</dt>
-        <dd>Align the elements to the right.</dd>
-        
-        <dt>center</dt>
-        <dd>Align the elements centered.</dd>
-        
-        <dt>justify</dt>
-        <dd>Align the elements justified.</dd>
-        
-        <dt>start</dt>
-        <dd>Align the elements according to the left-to-right locale (start means left in western languages.)</dd>
-        
-        <dt>end</dt>
-        <dd>Align the elements according to the left-to-right locale (end means right in western languages.)</dd>
-        
-        <dt>&lt;character&gt;</dt>
-        <dd>Align the elements on the character. Note that elements that do not have the character are aligned as if they ended with the character. The element as a whole is aligned according to the inherited text alignment property.</dd>
-    </dl></dd>
+<div dir="rtl">
+abc
