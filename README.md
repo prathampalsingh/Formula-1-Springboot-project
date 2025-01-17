@@ -1,4 +1,4 @@
-# Formula 1 Tracker 🚀
+ # Formula 1 Tracker 🚀
 
 A Spring Boot application to manage and track Formula 1 drivers, races, teams, and results. This project leverages modern Java development tools and libraries, such as Spring Boot, JPA, Hibernate, Lombok, and MySQL, to create a RESTful API that seamlessly interacts with the database.
 
@@ -47,10 +47,10 @@ src\
 ├── main\
 │   ├── java\
 │   │   ├── com.f1.tracker.controller\
-│   │   │   ├── DriverController.java        # Handles driver-related API requests\
-│   │   │   ├── RaceController.java          # Handles race-related API requests\
-│   │   │   ├── RaceResultController.java    # Handles race result-related API requests\
-│   │   │   ├── TeamController.java          # Handles team-related API requests\
+│   │   │   ├── DriverController.java            # Handles driver-related API requests\
+│   │   │   ├── RaceController.java              # Handles race-related API requests\
+│   │   │   ├── RaceResultController.java        # Handles race result-related API requests\
+│   │   │   ├── TeamController.java              # Handles team-related API requests\
 │   │   ├── com.f1.tracker.entity\
 │   │   │   ├── DriverEntity.java            # Entity representing Driver table\
 │   │   │   ├── RaceEntity.java              # Entity representing Race table\
@@ -106,9 +106,3 @@ DELETE /results/{id} - Delete a result
 **Postman**: Comprehensive API testing.
 
 ***Made with ❤️ using Java and Spring Boot.***
-
-
-
-
-   
-
