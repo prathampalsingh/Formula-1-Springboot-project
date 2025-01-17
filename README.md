@@ -107,5 +107,4 @@ DELETE /results/{id} - Delete a result
 
 ***Made with ❤️ using Java and Spring Boot.***
 
-<div dir="rtl">
-abc
+<div dir="rtl">abc
