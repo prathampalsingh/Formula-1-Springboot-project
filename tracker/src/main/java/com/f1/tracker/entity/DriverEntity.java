@@ -1,30 +1,26 @@
 package com.f1.tracker.entity;
 
-import com.f1.tracker.entity.TeamEntity;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.util.List;
-
 @Entity
 @Data
+@Table(name = "Driver")
 public class DriverEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long driver_id;
 
     private String name;
     private String nationality;
-    private Integer age;
+    private int age;
+    private int wins;
+    private int championships;
 
-    @ManyToOne
-    @JoinColumn(name = "team_id")
-    private Team team;
+    // Many-to-one relationship with the TeamEntity
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "team_id", referencedColumnName = "team_id", nullable = false) // team_id in DriverEntity references team_id in TeamEntity
+    private TeamEntity team; // This field links the driver to the team
 
-    private Integer wins;
-    private Integer championships;
 }
-
