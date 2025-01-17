@@ -47,32 +47,32 @@ src\
 ├── main\
 │   ├── java\
 │   │   ├── com.f1.tracker.controller\
-│   │   │   ├── DriverController.java            # Handles driver-related API requests\
-│   │   │   ├── RaceController.java              # Handles race-related API requests\
-│   │   │   ├── RaceResultController.java        # Handles race result-related API requests\
-│   │   │   ├── TeamController.java              # Handles team-related API requests\
+│   │   │   ├── DriverController.java   <div dir="rtl">         # Handles driver-related API requests\
+│   │   │   ├── RaceController.java       <div dir="rtl">       # Handles race-related API requests\
+│   │   │   ├── RaceResultController.java       <div dir="rtl"> # Handles race result-related API requests\
+│   │   │   ├── TeamController.java          <div dir="rtl">    # Handles team-related API requests\
 │   │   ├── com.f1.tracker.entity\
-│   │   │   ├── DriverEntity.java            # Entity representing Driver table\
-│   │   │   ├── RaceEntity.java              # Entity representing Race table\
-│   │   │   ├── RaceResultEntity.java        # Entity representing Race Results table\
-│   │   │   ├── TeamEntity.java              # Entity representing Team table\
+│   │   │   ├── DriverEntity.java         <div dir="rtl">   # Entity representing Driver table\
+│   │   │   ├── RaceEntity.java           <div dir="rtl">   # Entity representing Race table\
+│   │   │   ├── RaceResultEntity.java      <div dir="rtl">  # Entity representing Race Results table\
+│   │   │   ├── TeamEntity.java           <div dir="rtl">   # Entity representing Team table\
 │   │   ├── com.f1.tracker.service\
-│   │   │   ├── DriverService.java           # Business logic for Driver\
-│   │   │   ├── RaceService.java             # Business logic for Race\
-│   │   │   ├── RaceResultService.java       # Business logic for Race Results\
-│   │   │   ├── TeamService.java             # Business logic for Team\
+│   │   │   ├── DriverService.java          <div dir="rtl"> # Business logic for Driver\
+│   │   │   ├── RaceService.java          <div dir="rtl">   # Business logic for Race\
+│   │   │   ├── RaceResultService.java     <div dir="rtl">  # Business logic for Race Results\
+│   │   │   ├── TeamService.java           <div dir="rtl">  # Business logic for Team\
 │   │   ├── com.f1.tracker.repository\
-│   │   │   ├── DriverRepository.java        # JPA Repository for Driver\
-│   │   │   ├── RaceRepository.java          # JPA Repository for Race\
-│   │   │   ├── RaceResultRepository.java    # JPA Repository for Race Results\
-│   │   │   ├── TeamRepository.java          # JPA Repository for Team\
+│   │   │   ├── DriverRepository.java       <div dir="rtl"> # JPA Repository for Driver\
+│   │   │   ├── RaceRepository.java         <div dir="rtl"> # JPA Repository for Race\
+│   │   │   ├── RaceResultRepository.java   <div dir="rtl"> # JPA Repository for Race Results\
+│   │   │   ├── TeamRepository.java         <div dir="rtl"> # JPA Repository for Team\
 │   └── resources\
-│       ├── application.properties           # Application configuration\
-│       └── data.sql                         # Sample data for database initialization (if applicable)\
+│       ├── application.properties          <div dir="rtl"> # Application configuration\
+│       └── data.sql                      <div dir="rtl">   # Sample data for database initialization (if applicable)\
 ├── test\
 │   ├── java\
-│   │   ├── com.f1.tracker                   # Unit tests for various components\
-├── pom.xml                                  # Maven build file containing project dependencies
+│   │   ├── com.f1.tracker                 <div dir="rtl">  # Unit tests for various components\
+├── pom.xml                                 <div dir="rtl"> # Maven build file containing project dependencies
 
 ##  🧭 API Endpoints
 
@@ -107,4 +107,4 @@ DELETE /results/{id} - Delete a result
 
 ***Made with ❤️ using Java and Spring Boot.***
 
-<div dir="rtl">abc
+
