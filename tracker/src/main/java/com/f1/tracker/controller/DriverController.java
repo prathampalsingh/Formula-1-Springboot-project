@@ -36,20 +36,20 @@ public class DriverController {
 
     @PostMapping("/createDriver")
     public ResponseEntity<DriverEntity> createDriver(@RequestBody DriverEntity driver) {
-        // Fetch the TeamEntity using the provided team_id
-        Long teamId = driver.getTeam().getTeam_id(); // Get team_id from the request body
-        Optional<TeamEntity> team = teamService.findById(teamId);
-
-        if (team.isPresent()) {
-            // If team is found, set it on the driver
-            driver.setTeam(team.get());
-            DriverEntity savedDriver = driverService.save(driver);
-            return ResponseEntity.ok(savedDriver); // Return the saved driver
-        } else {
-            // If team not found, return a bad request response
-            return ResponseEntity.badRequest().body(null);
-        }
+    if (driver.getTeam() == null || driver.getTeam().getTeam_id() == null) {
+        return ResponseEntity.badRequest().body(null); // Ensure team is provided
     }
+
+    Optional<TeamEntity> team = teamService.findById(driver.getTeam().getTeam_id());
+    if (team.isPresent()) {
+        driver.setTeam(team.get());
+        DriverEntity savedDriver = driverService.save(driver);
+        return ResponseEntity.ok(savedDriver);
+    } else {
+        return ResponseEntity.badRequest().body(null);
+    }
+}
+
 
     @PutMapping("/{id}")
     public ResponseEntity<DriverEntity> updateDriver(@PathVariable Long id, @RequestBody DriverEntity driver) {

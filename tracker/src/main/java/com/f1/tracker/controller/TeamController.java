@@ -30,9 +30,14 @@ public class TeamController {
     }
 
     @PostMapping("/createTeam")
-    public TeamEntity createTeam(@RequestBody TeamEntity team) {
-        return teamService.save(team);
+public TeamEntity createTeam(@RequestBody TeamEntity team) {
+    // Ensure each driver in the team is properly linked
+    if (team.getDrivers() != null) {
+        team.getDrivers().forEach(driver -> driver.setTeam(team));
     }
+    return teamService.save(team);
+}
+
 
     @PutMapping("/{id}")
     public ResponseEntity<TeamEntity> updateTeam(@PathVariable Long id, @RequestBody TeamEntity team) {
