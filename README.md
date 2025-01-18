@@ -105,6 +105,21 @@ DELETE /results/{id} - Delete a result
 **MySQL Driver**: Seamless database connectivity.\
 **Postman**: Comprehensive API testing.
 
+## 💾 Database
+
+1. create database name f1_tracker or f1db
+```bash
+create database f1db
+```
+
+2. This is the description of the database driver and teams which uses `@ManyToOne` and `@ManyToMany` relationship
+
+![f1_manager_desc](https://github.com/user-attachments/assets/3e201677-8f5c-483a-99e5-3e283b54a765)
+
+3. As you can see the data is present in the database
+
+![f1_manager_data](https://github.com/user-attachments/assets/6f7dba09-2180-4acc-b74c-ba995f601350)
+
 ***Made with ❤️ using Java and Spring Boot.***
 
 
