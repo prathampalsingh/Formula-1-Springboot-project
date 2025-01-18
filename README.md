@@ -22,22 +22,28 @@ A Spring Boot application to manage and track Formula 1 drivers, races, teams, a
 ---
 
 ## 🚀 Getting Started
-### 1. Configure the Database
+
+### 1. MySql setup
+
+1. create database name f1db
+```bash
+create database f1db
+```
+
+### 2. Configure the Database
 Update the application.properties file with your MySQL credentials:
 ```bash
-spring.datasource.url=jdbc:mysql://localhost:3306/f1_tracker\
-spring.datasource.username=your-username\
-spring.datasource.password=your-password\
+spring.datasource.url=jdbc:mysql://localhost:3306/your-databasename
+spring.datasource.username=your-username
+spring.datasource.password=your-password
 spring.jpa.show-sql=true
 spring.jpa.generate-ddl=true
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 ```
 
-### 2.Build and Run
-
+### 3.Build and Run
 Use Maven to build and run the project:
-
 ```bash
   mvn clean install
   mvn spring-boot:run
@@ -108,19 +114,11 @@ DELETE /results/{id} - Delete a result
 **MySQL Driver**: Seamless database connectivity.\
 **Postman**: Comprehensive API testing.
 
-## 💾 Database
-
-1. create database name f1_tracker or f1db
-```bash
-create database f1db
-```
-
-2. This is the description of the database driver and teams which uses `@ManyToOne` and `@ManyToMany` relationship
-
+## 💾 Database Result
+1. This is the description of the database driver and teams which uses `@ManyToOne` and `@ManyToMany` relationship\
 ![f1_manager_desc](https://github.com/user-attachments/assets/3e201677-8f5c-483a-99e5-3e283b54a765)
 
-3. As you can see the data is present in the database
-
+2. As you can see the data is present in the database\
 ![f1_manager_data](https://github.com/user-attachments/assets/6f7dba09-2180-4acc-b74c-ba995f601350)
 
 ***Made with ❤️ using Java and Spring Boot.***
