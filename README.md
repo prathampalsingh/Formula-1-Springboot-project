@@ -1,4 +1,4 @@
- # Formula 1 Tracker 🚀
+ # Formula 1 🚀
 
 A Spring Boot application to manage and track Formula 1 drivers, races, teams, and results. This project leverages modern Java development tools and libraries, such as Spring Boot, JPA, Hibernate, Lombok, and MySQL, to create a RESTful API that seamlessly interacts with the database.
 
