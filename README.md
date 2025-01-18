@@ -24,12 +24,15 @@ A Spring Boot application to manage and track Formula 1 drivers, races, teams, a
 ## 🚀 Getting Started
 ### 1. Configure the Database
 Update the application.properties file with your MySQL credentials:
-
+```bash
 spring.datasource.url=jdbc:mysql://localhost:3306/f1_tracker\
 spring.datasource.username=your-username\
 spring.datasource.password=your-password\
+spring.jpa.show-sql=true
+spring.jpa.generate-ddl=true
 spring.jpa.hibernate.ddl-auto=update
-
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+```
 
 ### 2.Build and Run
 
