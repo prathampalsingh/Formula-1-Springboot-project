@@ -117,25 +117,25 @@ src\
 
 ##  🧭 API Endpoints
 
-- **Drivers**
+- **Drivers**\
 GET /drivers - Get all drivers\
 POST /drivers/createDriver - Add a new driver\
 PUT /drivers/{id} - Update a driver\
 DELETE /drivers/{id} - Delete a driver
 
-- **Teams**
+- **Teams**\
 GET /teams - Get all teams\
 POST /teams/createTeam - Add a new team\
 PUT /teams/{id} - Update a team\
 DELETE /teams/{id} - Delete a team
 
-- **Race**
+- **Race**\
 GET /races - Get all races\
 POST /races/createRace - Add a new race\
 PUT /races/{id} - Update a race\
 DELETE /races/{id} - Delete a race
 
-- **Results**
+- **Results**\
 GET /results - Get all race results\
 POST /results/createRaceResult - Add a new result\
 PUT /results/{id} - Update a result\
