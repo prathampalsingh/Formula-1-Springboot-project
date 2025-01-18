@@ -60,11 +60,11 @@ Use Maven to build and run the project:
 5. Provide this within the body
    ```bash
    {
-  "name": "Red Bull Racing",
-  "headquarters": "Milton Keynes, UK",
-  "budget": 450000000.00,
-  "carModel": "RB20",
-  "drivers": [
+   "name": "Red Bull Racing",
+   "headquarters": "Milton Keynes, UK",
+   "budget": 450000000.00,
+   "carModel": "RB20",
+   "drivers": [
     {
       "name": "Max Verstappen",
       "nationality": "Dutch",
@@ -79,8 +79,8 @@ Use Maven to build and run the project:
       "wins": 6,
       "championships": 0
     }
-  ]
-}
+   ]
+   }
 
 
 Access the API at: http://localhost:8080
