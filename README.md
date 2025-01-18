@@ -23,6 +23,7 @@ A Spring Boot application to manage and track Formula 1 drivers, races, teams, a
 
 ## 🚀 Getting Started
 
+***While Creating spring boot project make sure to select maven and in dependencies (Spring data jpa, Spring web, lombok, mysql driver)***
 ### 1. MySql setup
 
 1. create database name f1db
@@ -48,6 +49,40 @@ Use Maven to build and run the project:
   mvn clean install
   mvn spring-boot:run
 ```
+### Postman
+1. Make sure to select the `post` method
+2. In the url provide:
+   ```bash
+   http://localhost:8080/teams/createTeam
+   ```
+3. Select `body` and format as `raw`
+4. From the drop down menu select `Json`
+5. Provide this within the body
+   ```bash
+   {
+  "name": "Red Bull Racing",
+  "headquarters": "Milton Keynes, UK",
+  "budget": 450000000.00,
+  "carModel": "RB20",
+  "drivers": [
+    {
+      "name": "Max Verstappen",
+      "nationality": "Dutch",
+      "age": 25,
+      "wins": 40,
+      "championships": 2
+    },
+    {
+      "name": "Sergio Perez",
+      "nationality": "Mexican",
+      "age": 33,
+      "wins": 6,
+      "championships": 0
+    }
+  ]
+}
+
+
 Access the API at: http://localhost:8080
 
 ## 📂 Project Structure
