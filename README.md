@@ -68,14 +68,14 @@ Use Maven to build and run the project:
     {
       "name": "Max Verstappen",
       "nationality": "Dutch",
-      "age": 25,
-      "wins": 40,
-      "championships": 2
+      "age": 27,
+      "wins": 63,
+      "championships": 4
     },
     {
       "name": "Sergio Perez",
       "nationality": "Mexican",
-      "age": 33,
+      "age": 34,
       "wins": 6,
       "championships": 0
     }
