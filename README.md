@@ -31,7 +31,7 @@ A Spring Boot application to manage and track Formula 1 drivers, races, teams, a
 create database f1db
 ```
 
-### 2. Configure the Database
+### 2. Configure `application.properties`
 Update the application.properties file with your MySQL credentials:
 ```bash
 spring.datasource.url=jdbc:mysql://localhost:3306/your-databasename
