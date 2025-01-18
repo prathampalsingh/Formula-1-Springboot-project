@@ -82,9 +82,6 @@ Use Maven to build and run the project:
    ]
    }
 
-
-Access the API at: http://localhost:8080
-
 ## 📂 Project Structure
 
 src\
